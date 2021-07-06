@@ -74,7 +74,7 @@ namespace Consul
                     outDuration.Append(".");
                     outDuration.Append(ts.ToString("fff"));
                 }
-                if (ts.Seconds > 0)
+                if (ts.Seconds > 0 || ts.Milliseconds > 0)
                 {
                     outDuration.Append("s");
                 }
